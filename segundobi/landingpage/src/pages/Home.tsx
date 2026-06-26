@@ -322,83 +322,90 @@ export default function Home() {
                 </div>
                 </section>         
             </section>
+            
             <section id="contact" className="contact-container">
-        <header className="contact-header">
-          <span>Envie sua dúvida</span>
-          <h2>Entre em contato</h2>
-          <p>
-            Entre em contato, estamos dispostos a tirar qualquer dúvida,
-            seja um orçamento, uma dúvida técnica de algum de nossos produtos.
-            Estamos à disposição para responder 😎
-          </p>
-        </header>
+                    <header className="contact-header">
+                        <span>Envie sua dúvida</span>
+                            <h2>Entre em contato</h2>
+                                <p>
+                                    Entre em contato, estamos dispostos a tirar qualquer dúvida,
+                                    seja um orçamento, uma dúvida técnica de algum de nossos produtos.
+                                    Estamos à disposição para responder 😎
+                                </p>
+                    </header>
 
-        <form
-  className="contact-form"
-  name="contact"
-  method="POST"
-  data-netlify="true"
->
-  <input type="hidden" name="form-name" value="contact" />
+                    <form
+                        className="contact-form"
+                        name="contact"
+                        method="POST"
+                        data-netlify="true"
+                    >
+                    <input type="hidden" name="form-name" value="contact" />
 
-  <input type="email" name="email" placeholder="Seu melhor Email" />
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Seu melhor Email"
+                        required
+                    />
 
-  <input
-    type="text"
-    name="message"
-    placeholder="Motivo do contato. Ex: Gostei do serviço, gostaria de um orçamento"
-  />
+                    <input
+                        type="text"
+                        name="message"
+                        placeholder="Motivo do contato. Ex: Gostei do serviço, gostaria de um orçamento"
+                        required
+                    />
 
-  <button type="submit">Enviar</button>
-</form>
-</section>      
+                    <button type="submit">Enviar</button>
+                </form> 
+            </section>      
 
-<footer className="footer">
-  <div className="footer-grid">
+            <footer className="footer">
+                        <div className="footer-grid">
 
-    <div className="footer-brand">
-      <img src={LOGO} alt="Logo DonaFrost" width={220} height={80} />
-      <div className="social">
-        <span>📷</span>
-        <span>📘</span>
-        <span>▶️</span>
-      </div>
-    </div>
+                        <div className="footer-brand">
+                            <img src={LOGO} alt="Logo DonaFrost" width={220} height={80} />
+                            <div className="social">
+                                <span>📷</span>
+                                <span>📘</span>
+                                <span>▶️</span>
+                            </div>
+                        </div>
 
-    <div>
-      <h4>Empresa</h4>
-      <ul>
-        <li>Sobre nós</li>
-        <li>Faça parte do time</li>
-        <li>Blog</li>
-      </ul>
-    </div>
+                        <div>
+                            <h4>Empresa</h4>
+                            <ul>
+                                <li>Sobre nós</li>
+                                <li>Faça parte do time</li>
+                                <li>Blog</li>
+                            </ul>
+                        </div>
 
-    <div>
-      <h4>Funcionalidades</h4>
-      <ul>
-        <li>Marketing</li>
-        <li>Análise de dados</li>
-        <li>Suporte Premium</li>
-      </ul>
-    </div>
+                    <div>
+                        <h4>Funcionalidades</h4>
+                        <ul>
+                        <li>Marketing</li>
+                        <li>Análise de dados</li>
+                        <li>Suporte Premium</li>
+                    </ul>
+                </div>
 
-    <div>
-      <h4>Recursos</h4>
-      <ul>
-        <li>iOS & Android</li>
-        <li>Test Drive</li>
-        <li>Clientes</li>
-        <li>API</li>
-      </ul>
-    </div>
+                <div>
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li>iOS & Android</li>
+                        <li>Test Drive</li>
+                        <li>Clientes</li>
+                        <li>API</li>
+                    </ul>
+                </div>
 
-  </div>
+                </div>
 
-  <div className="footer-bottom">
-    Feito com 💙 na Swuiter ©2026 - Todos os direitos reservados.
-  </div>
-</footer>
+                <div className="footer-bottom">
+                    Feito com 💙 na Swuiter ©2026 - Todos os direitos reservados.
+                </div>
+            </footer>
         </main> 
     )
 }
