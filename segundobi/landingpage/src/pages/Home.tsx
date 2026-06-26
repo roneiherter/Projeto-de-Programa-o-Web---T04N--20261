@@ -333,35 +333,25 @@ export default function Home() {
           </p>
         </header>
 
-        <form className="contact-form">
-          <input type="email" placeholder="Seu melhor Email" />
-          <input
-            type="text"
-            placeholder="Motivo do contato. Ex: Gostei muito do produto X, poderia me enviar um orçamento?"
-          />
-          <button type="submit">Enviar</button>
-        </form>
-      </section>
-        <section id="contact" className="contact-container">
-  <header className="contact-header">
-    <span>Envie sua dúvida</span>
-    <h2>Entre em contato</h2>
-    <p>
-      Entre em contato, estamos dispostos a tirar qualquer dúvida,
-      seja um orçamento ou questão técnica dos nossos serviços.
-      Estamos à disposição para responder 😎
-    </p>
-  </header>
+        <form
+  className="contact-form"
+  name="contact"
+  method="POST"
+  data-netlify="true"
+>
+  <input type="hidden" name="form-name" value="contact" />
 
-  <form className="contact-form">
-    <input type="email" placeholder="Seu melhor Email" />
-    <input
-      type="text"
-      placeholder="Motivo do contato. Ex: Gostei do serviço, gostaria de um orçamento"
-    />
-    <button type="submit">Enviar</button>
-  </form>
-</section>
+  <input type="email" name="email" placeholder="Seu melhor Email" />
+
+  <input
+    type="text"
+    name="message"
+    placeholder="Motivo do contato. Ex: Gostei do serviço, gostaria de um orçamento"
+  />
+
+  <button type="submit">Enviar</button>
+</form>
+</section>      
 
 <footer className="footer">
   <div className="footer-grid">
