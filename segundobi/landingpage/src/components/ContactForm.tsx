@@ -90,7 +90,7 @@ const ContactForm = () => {
             <div style={{ display: "flex", justifyContent: "center", marginTop: "1rem" }}>
                 <ReCAPTCHA
                     ref={recaptchaRef}
-                    sitekey={"6LcKdjctAAAAAEWBpMusOU1JPhezn_Nf2h-Vm58b"}
+                    sitekey={"6Ld7fDctAAAAAMbdH729_ipFWR7NKQM3mffbgcLA"}
                     onChange={handleCompleteChallenge}
                 />
             </div>
