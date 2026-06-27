@@ -19,6 +19,8 @@ import "../styles/contact.css";
 import "../styles/footer.css";
 import rectangleOne from "../assets/Rectangle 13.png";
 import rectangleTwo from "../assets/Rectangle 14.png";
+import ContactForm from "../components/contactform";
+
 
 
 
@@ -323,42 +325,16 @@ export default function Home() {
                 </section>         
             </section>
             
-            <section id="contact" className="contact-container">
-                    <header className="contact-header">
-                        <span>Envie sua dúvida</span>
-                            <h2>Entre em contato</h2>
-                                <p>
-                                    Entre em contato, estamos dispostos a tirar qualquer dúvida,
-                                    seja um orçamento, uma dúvida técnica de algum de nossos produtos.
-                                    Estamos à disposição para responder 😎
-                                </p>
-                    </header>
-
-                    <form
-                        className="contact-form"
-                        name="contact"
-                        method="POST"
-                        data-netlify="true"
-                    >
-                    <input type="hidden" name="form-name" value="contact" />
-
-                    <input
-                        type="email"
-                        name="email"
-                        placeholder="Seu melhor Email"
-                        required
-                    />
-
-                    <input
-                        type="text"
-                        name="message"
-                        placeholder="Motivo do contato. Ex: Gostei do serviço, gostaria de um orçamento"
-                        required
-                    />
-
-                    <button type="submit">Enviar</button>
-                </form> 
-            </section>      
+            <section id="contact" className="container">
+                <header>
+                    <span className="subtitle">Fale Conosco</span>
+                    <h2>Vamos andar com seu carro dos sonho?</h2>
+                    <p>
+                        Preencha os dados abaixo e contrate seu veiculo premium.
+                    </p>
+                </header>
+                <ContactForm />
+            </section>     
 
             <footer className="footer">
                         <div className="footer-grid">

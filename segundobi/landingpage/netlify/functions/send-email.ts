@@ -1,12 +1,15 @@
 import type { Handler, HandlerEvent } from "@netlify/functions";
-import nodemailer from "nodemailer";
 
 interface ContactPayload {
   email: string;
   message: string;
 }
 
-const ALLOWED_ORIGIN = process.env.ALLOWED_ORIGIN ?? "";
+declare const process: {
+  env?: Record<string, string | undefined>;
+};
+
+const ALLOWED_ORIGIN = process.env?.ALLOWED_ORIGIN ?? "";
 
 const corsHeaders = (origin: string) => ({
   "Access-Control-Allow-Origin": ALLOWED_ORIGIN || origin,
@@ -63,6 +66,12 @@ const handler: Handler = async (event: HandlerEvent) => {
       body: JSON.stringify({ error: "E-mail inválido." }),
     };
   }
+
+  return {
+    statusCode: 200,
+    headers: corsHeaders(origin),
+    body: JSON.stringify({ success: true, message: "Dados válidos." }),
+  };
 };
 
 
