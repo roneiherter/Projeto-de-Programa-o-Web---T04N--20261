@@ -37,7 +37,7 @@ const ContactForm = () => {
             }
 
          
-            setStatusText("✅ Mensagem enviada com sucesso!");
+            setStatusText("Mensagem enviada com sucesso!");
             setEmail("");
             setMessage("");
             

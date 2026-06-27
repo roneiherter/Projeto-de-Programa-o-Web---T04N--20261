@@ -19,7 +19,7 @@ import "../styles/contact.css";
 import "../styles/footer.css";
 import rectangleOne from "../assets/Rectangle 13.png";
 import rectangleTwo from "../assets/Rectangle 14.png";
-import ContactForm from "../components/contactform";
+import ContactForm from "../components/ContactForm";
 
 
 
